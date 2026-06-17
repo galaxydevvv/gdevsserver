@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Live Dynmap map for gdevs server." />
+  <title>Map | gdevs server</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-bg"></div>
+  <header class="nav-shell">
+    <a class="brand" href="index.html" aria-label="gdevs server home" data-sound>
+      <span class="brand-mark" aria-hidden="true"><span></span></span>
+      <span class="brand-text">gdevs server</span>
+    </a>
+    <button class="nav-toggle" aria-label="Open navigation" data-nav-toggle data-sound><span></span><span></span><span></span></button>
+    <nav class="nav-links" data-nav-menu>
+      <a href="index.html" data-sound>Home</a>
+      <a href="rules.html" data-sound>Rules</a>
+      <a href="docs.html" data-sound>Wiki</a>
+      <a class="active" href="map.html" data-sound>Map</a>
+      <a href="staff.html" data-sound>Staff</a>
+    </nav>
+    <button class="sound-toggle" type="button" data-audio-toggle data-sound>Sound Off</button>
+  </header>
+
+  <main class="page-main section-pad map-page">
+    <section class="map-hero panel hero-card-split">
+      <div>
+        <span class="eyebrow">Live world map</span>
+        <h1>Dynmap</h1>
+        <p>Use the map to explore the world, find areas, and watch the server geography become everyone’s problem in real time.</p>
+      </div>
+      <div class="map-note-card">
+        <strong>Setup note</strong>
+        <span>If this box is blank, replace the iframe URL in <code>map.html</code> with your actual public Dynmap link.</span>
+      </div>
+    </section>
+
+    <section class="dynmap-shell panel">
+      <div class="dynmap-toolbar">
+        <div><span class="panel-kicker">Embedded map</span><h2>gdevs server world</h2></div>
+        <a class="btn btn-secondary" href="https://gdevsserver.minehut.gg:8123/" target="_blank" rel="noopener" data-sound>Open Map</a>
+      </div>
+      <iframe
+        class="dynmap-frame"
+        src="https://gdevsserver.minehut.gg:8123/"
+        title="gdevs server Dynmap"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+      <p class="map-fallback">Dynmap usually uses port <strong>8123</strong>. If Minehut gives you a different public Dynmap URL, replace both map links in this file with that URL.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer"><p>Made by galaxydev</p><button type="button" class="footer-copy" data-copy-ip data-sound>Copy gdevsserver.minehut.gg</button></footer>
+  <div class="toast" data-toast>Copied IP.</div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Docs and player guides for gdevs server." />
+  <title>Wiki | gdevs server</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-bg"></div>
+  <header class="nav-shell">
+    <a class="brand" href="index.html" aria-label="gdevs server home" data-sound>
+      <span class="brand-mark" aria-hidden="true"><span></span></span>
+      <span class="brand-text">gdevs server</span>
+    </a>
+    <button class="nav-toggle" aria-label="Open navigation" data-nav-toggle data-sound><span></span><span></span><span></span></button>
+    <nav class="nav-links" data-nav-menu>
+      <a href="index.html" data-sound>Home</a>
+      <a href="rules.html" data-sound>Rules</a>
+      <a class="active" href="docs.html" data-sound>Wiki</a>
+      <a href="map.html" data-sound>Map</a>
+      <a href="staff.html" data-sound>Staff</a>
+    </nav>
+    <button class="sound-toggle" type="button" data-audio-toggle data-sound>Sound Off</button>
+  </header>
+
+  <main class="page-main section-pad docs-page">
+    <section class="docs-hero panel hero-card-split">
+      <div>
+        <span class="eyebrow">gdevs wiki</span>
+        <h1>Player docs</h1>
+        <p>Everything players need to use the server systems without asking the same question seventeen times in chat. Humanity may yet recover.</p>
+      </div>
+      <div class="doc-search-card">
+        <strong>Quick tip</strong>
+        <span>Use your browser search with <kbd>Ctrl</kbd> + <kbd>F</kbd> to find commands, bounties, brewing, fishing, homes, or auctions.</span>
+      </div>
+    </section>
+
+    <div class="docs-shell">
+      <aside class="docs-sidebar panel">
+        <span class="panel-kicker">Contents</span>
+        <a href="#getting-started" data-sound>Getting started</a>
+        <a href="#commands" data-sound>Commands</a>
+        <a href="#bounties" data-sound>Bounties</a>
+        <a href="#brewery" data-sound>Brewery</a>
+        <a href="#fishing" data-sound>Advanced Fishing</a>
+        <a href="#economy" data-sound>Economy</a>
+        <a href="#survival-tips" data-sound>Survival tips</a>
+      </aside>
+
+      <section class="docs-article">
+        <article class="doc-card panel" id="getting-started">
+          <div class="doc-heading"><span class="doc-number">01</span><div><span class="panel-kicker">Start here</span><h2>Getting started</h2></div></div>
+          <p>gdevs server is a semi-anarchy survival SMP. There are useful commands and an economy, but no claims and no anti-grief. Your base is only safe if you make it safe. Tragic, but educational.</p>
+          <div class="info-grid">
+            <div><strong>Java IP</strong><span>gdevsserver.minehut.gg</span></div>
+            <div><strong>Bedrock address</strong><span>gdevsserver.minehut.gg</span></div>
+            <div><strong>Bedrock port</strong><span>19132</span></div>
+            <div><strong>Version</strong><span>26.1.2</span></div>
+          </div>
+          <div class="doc-callout warning"><strong>Important:</strong> PvP, raiding, and griefing are allowed. Xray, hacks, lag machines, dupes, and spawn killing are not.</div>
+        </article>
+
+        <article class="doc-card panel" id="commands">
+          <div class="doc-heading"><span class="doc-number">02</span><div><span class="panel-kicker">Reference</span><h2>Useful commands</h2></div></div>
+          <p>These are the main commands normal players should know. Not a giant command dump, because nobody should have to study Minecraft like it is tax law.</p>
+          <div class="docs-table">
+            <div class="table-head"><span>Command</span><span>Use</span></div>
+            <div><code>/rtp</code><span>Teleport randomly into the wild.</span></div>
+            <div><code>/tpa &lt;player&gt;</code><span>Ask to teleport to another player.</span></div>
+            <div><code>/tpaccept</code><span>Accept a teleport request.</span></div>
+            <div><code>/home</code><span>Return to your saved home.</span></div>
+            <div><code>/sethome</code><span>Save your current location as home.</span></div>
+            <div><code>/delhome</code><span>Delete a saved home.</span></div>
+            <div><code>/kit</code><span>View and claim available kits.</span></div>
+            <div><code>/warp</code><span>Open or view server warps.</span></div>
+            <div><code>/ah</code><span>Open the auction house.</span></div>
+            <div><code>/pay &lt;player&gt; &lt;amount&gt;</code><span>Pay another player.</span></div>
+            <div><code>/bal</code><span>Check your balance.</span></div>
+            <div><code>/baltop</code><span>View the richest players.</span></div>
+            <div><code>/msg &lt;player&gt;</code><span>Send a private message.</span></div>
+          </div>
+        </article>
+
+        <article class="doc-card panel" id="bounties">
+          <div class="doc-heading"><span class="doc-number">03</span><div><span class="panel-kicker">PvP system</span><h2>Bounties</h2></div></div>
+          <p>Bounties let players put money on someone’s head. If another player kills the target, they can claim the reward. Simple, dramatic, and exactly the kind of problem Minecraft players invent for each other.</p>
+          <div class="step-list">
+            <div><strong>1. Check active bounties</strong><span>Use <code>/bounty list</code> to see who is being hunted.</span></div>
+            <div><strong>2. Set a bounty</strong><span>Use <code>/bounty set &lt;name&gt; &lt;price&gt;</code> to place money on a player.</span></div>
+            <div><strong>3. Raise the reward</strong><span>Use <code>/bounty add &lt;name&gt; &lt;price&gt;</code> to add money to an existing bounty.</span></div>
+          </div>
+          <div class="doc-callout"><strong>Tip:</strong> If you have a bounty, do not carry your best gear like a walking donation chest.</div>
+        </article>
+
+        <article class="doc-card panel" id="brewery">
+          <div class="doc-heading"><span class="doc-number">04</span><div><span class="panel-kicker">Plugin guide</span><h2>Brewery</h2></div></div>
+          <p>Brewery lets players create drinks using cauldrons, heat, brewing stands, barrels, aging, and testing. A few beginner hints are public. The better recipes stay hidden so players actually experiment, a shocking concept in the age of instant guides.</p>
+          <h3>Brewing process</h3>
+          <div class="process-grid">
+            <div><strong>Heat a cauldron</strong><span>Place a cauldron above a heat source like fire, lava, a campfire, or magma if your server config allows it.</span></div>
+            <div><strong>Add water</strong><span>Fill the cauldron with water before adding ingredients.</span></div>
+            <div><strong>Add ingredients</strong><span>Right-click ingredients into the cauldron. Ingredient choice and cook time affect the result.</span></div>
+            <div><strong>Bottle it</strong><span>Use glass bottles on the cauldron after cooking to collect the unfinished brew.</span></div>
+            <div><strong>Distill it</strong><span>Some drinks need a brewing stand. Put glowstone dust in the top slot as the filter and brew bottles in the bottom slots.</span></div>
+            <div><strong>Age it</strong><span>Put drinks in barrels. Wood type and aging time can matter.</span></div>
+          </div>
+          <h3>Barrels</h3>
+          <p>Some drinks can age in normal barrels. Others may work better with Brewery-style barrels depending on server setup. Try different wood types and aging times if a drink comes out low quality.</p>
+          <h3>Time conversions</h3>
+          <div class="docs-table small-table">
+            <div><code>1 Minecraft day</code><span>20 real minutes</span></div>
+            <div><code>2 Minecraft days</code><span>40 real minutes</span></div>
+            <div><code>3 Minecraft days</code><span>1 real hour</span></div>
+            <div><code>5 Minecraft days</code><span>1 hour 40 minutes</span></div>
+            <div><code>7 Minecraft days</code><span>2 hours 20 minutes</span></div>
+            <div><code>10 Minecraft days</code><span>3 hours 20 minutes</span></div>
+          </div>
+          <div class="doc-callout secret"><strong>Starter hints:</strong> Wheat-based drinks are good first tests. Apple drinks usually care about aging. Potato drinks may need distilling. Sugar cane can help with sweeter drinks. Advanced recipes are intentionally hidden.</div>
+        </article>
+
+        <article class="doc-card panel" id="fishing">
+          <div class="doc-heading"><span class="doc-number">05</span><div><span class="panel-kicker">Plugin guide</span><h2>Advanced Fishing</h2></div></div>
+          <p>Amazing Fishing upgrades normal fishing with custom fish, treasures, records, tournaments, and more interesting rewards. Fishing is now a real side activity instead of sitting by water and pretending patience is gameplay.</p>
+          <div class="feature-doc-grid">
+            <div><strong>Custom fish</strong><span>Catch more than vanilla fish, including rarer or more valuable catches.</span></div>
+            <div><strong>Records</strong><span>Compete for personal and global records.</span></div>
+            <div><strong>Tournaments</strong><span>Events can reward players for catches, weight, length, or most catches.</span></div>
+            <div><strong>Treasures</strong><span>Fishing can reward special loot and useful surprises.</span></div>
+          </div>
+        </article>
+
+        <article class="doc-card panel" id="economy">
+          <div class="doc-heading"><span class="doc-number">06</span><div><span class="panel-kicker">Money guide</span><h2>Economy and auctions</h2></div></div>
+          <p>The economy is player-driven. Use money to trade, pay players, buy through auctions, and place bounties. There is no global <code>/shop</code>, because that would turn survival into a vending machine with trees.</p>
+          <div class="docs-table small-table">
+            <div><code>/ah</code><span>Open the auction house.</span></div>
+            <div><code>/pay &lt;player&gt; &lt;amount&gt;</code><span>Send money to another player.</span></div>
+            <div><code>/bal</code><span>Check your money.</span></div>
+            <div><code>/baltop</code><span>See the richest players.</span></div>
+          </div>
+        </article>
+
+        <article class="doc-card panel" id="survival-tips">
+          <div class="doc-heading"><span class="doc-number">07</span><div><span class="panel-kicker">Survival guide</span><h2>Staying alive</h2></div></div>
+          <ul class="docs-list">
+            <li>Do not build your main base close to spawn.</li>
+            <li>Hide valuables in separate stashes, not one giant griefable chest room.</li>
+            <li>Use <code>/tpa</code> carefully. A teleport request can be a trap wearing manners.</li>
+            <li>Check bounties before walking around in expensive gear.</li>
+            <li>Trade in safer areas and never pay first unless you trust the player.</li>
+          </ul>
+        </article>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer"><p>Made by galaxydev</p><button type="button" class="footer-copy" data-copy-ip data-sound>Copy gdevsserver.minehut.gg</button></footer>
+  <div class="toast" data-toast>Copied IP.</div>
+  <script src="script.js"></script>
+</body>
+</html>
