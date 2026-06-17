@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex" />
+  <title>404 | Lost in the Wilderness</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="not-found-page">
+  <div class="panorama-scene dim" aria-hidden="true">
+    <div class="panorama-center">
+      <div class="skybox slow">
+        <div class="sky-face sky-front"></div>
+        <div class="sky-face sky-right"></div>
+        <div class="sky-face sky-back"></div>
+        <div class="sky-face sky-left"></div>
+        <div class="sky-face sky-top"></div>
+        <div class="sky-face sky-bottom"></div>
+      </div>
+    </div>
+  </div>
+  <div class="site-overlay heavy"></div>
+
+  <main class="lost-card-wrap">
+    <section class="lost-card">
+      <span class="eyebrow">404</span>
+      <h1>Lost in the Wilderness</h1>
+      <p>This chunk does not exist. You wandered too far from spawn, or the page got griefed.</p>
+      <div class="hero-actions centered">
+        <a class="btn btn-primary" href="index.html" data-sound>Return Home</a>
+        <button class="btn btn-secondary" type="button" data-copy-ip data-sound>Copy Server IP</button>
+      </div>
+      <p class="small-note">Server IP: <strong>gdevsserver.minehut.gg</strong></p>
+    </section>
+  </main>
+
+  <div class="toast" data-toast>Copied IP.</div>
+  <script src="script.js"></script>
+</body>
+</html>

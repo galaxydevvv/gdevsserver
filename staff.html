@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Staff team for gdevs server." />
+  <title>Staff | gdevs server</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-bg"></div>
+  <header class="nav-shell">
+    <a class="brand" href="index.html" aria-label="gdevs server home" data-sound>
+      <span class="brand-mark" aria-hidden="true"><span></span></span>
+      <span class="brand-text">gdevs server</span>
+    </a>
+    <button class="nav-toggle" aria-label="Open navigation" data-nav-toggle data-sound><span></span><span></span><span></span></button>
+    <nav class="nav-links" data-nav-menu>
+      <a href="index.html" data-sound>Home</a>
+      <a href="rules.html" data-sound>Rules</a>
+      <a href="docs.html" data-sound>Wiki</a>
+      <a class="active" href="staff.html" data-sound>Staff</a>
+    </nav>
+    <button class="sound-toggle" type="button" data-audio-toggle data-sound>Sound Off</button>
+  </header>
+
+  <main class="page-main section-pad">
+    <section class="page-hero compact">
+      <span class="eyebrow">Staff team</span>
+      <h1>The people keeping the chaos playable.</h1>
+      <p>Semi-anarchy still needs someone watching for hacks, xray, lag machines, and whatever terrible invention players create next.</p>
+    </section>
+
+    <section class="staff-grid">
+      <article class="staff-card owner-card">
+        <span class="rank-label">Owner</span>
+        <div class="player-head css-head"><span></span></div>
+        <h2>GalaxyDev13</h2>
+        <p>Server owner, builder of systems, and current victim of plugin configuration files.</p>
+      </article>
+      <article class="staff-card admin-card">
+        <span class="rank-label">Admin</span>
+        <div class="player-head frost-head"><span></span></div>
+        <h2>Frozenvr2463</h2>
+        <p>Admin support for keeping the server stable, fair, and only the correct amount of dangerous.</p>
+      </article>
+      <article class="staff-card helper-card">
+        <span class="rank-label">Helpers / Testers</span>
+        <div class="player-head empty-head"><span></span></div>
+        <h2>Coming soon</h2>
+        <p>No helpers or testers listed yet. A rare moment of administrative silence.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer"><p>Made by galaxydev</p><button type="button" class="footer-copy" data-copy-ip data-sound>Copy gdevsserver.minehut.gg</button></footer>
+  <div class="toast" data-toast>Copied IP.</div>
+  <script src="script.js"></script>
+</body>
+</html>
